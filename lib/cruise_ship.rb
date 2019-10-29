@@ -12,6 +12,6 @@ def select_winner(hash)
     if k == :suite_a && v.start_with?("A")
       winner = v
     end
-    winner
   }
+  winner
 end
