@@ -6,12 +6,13 @@
 #suite_e: "Crumpet the Elf"
 #}
 
-def select_winner(hash)
+def select_winner(passengers)
   winner = ""
-  hash.each {|k,v|
-    if k == :suite_a && v.start_with?("A")
-      winner = v
-    end
-  }
-  winner
+passengers.each do |suite, name|
+  if suite == :suite_a && name.start_with?("A")
+    winner = name
+  end
+end
+ 
+winner
 end
